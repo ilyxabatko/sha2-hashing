@@ -6,11 +6,13 @@ Rust representation of the `sha256sum`.
 We use the first message from the "SHA256LongMsg.rsp" to test our implementation.
 
 Use the following CLI command to dump a test vector (Unix-like systems only):
-```echo "[test vector]" | xxd -p -r > [filename].bin
+```
+echo "[test vector]" | xxd -p -r > [filename].bin
 ```
 
 Use the following CLI command to view the context of the dumped .bin file in hexadecimal format (Unix-like systems only):
-```xxd -p [filepath to the bin] 
+```
+xxd -p [filepath to the bin] 
 ```
 
 • Aditionally, you can always pass a file with a data to the `sha256sum [filepath]` command to compare the results.
