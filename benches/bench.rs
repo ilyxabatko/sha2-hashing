@@ -6,7 +6,7 @@ use lib::*;
 
 fn run_test(name: &str, c: &mut Criterion) {
     let mut g = c.benchmark_group(name);
-    g.bench_function("bench", |b| b.iter(|| black_box(doit()))); 
+    g.bench_function("bench", |b| b.iter(|| black_box(hash_file()))); 
     g.finish();
 }
 
