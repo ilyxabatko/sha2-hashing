@@ -1,0 +1,23 @@
+[package]
+name = "sha2-hashing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sha2 = "*"
+anyhow = "*"
+
+[dev-dependencies]
+criterion = "*"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "bin"
+path = "src/main.rs"
+
+[[bench]]
+name = "bench"
+harness = false
