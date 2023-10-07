@@ -7,9 +7,6 @@ edition = "2021"
 sha2 = "*"
 anyhow = "*"
 
-[dev-dependencies]
-criterion = "*"
-
 [lib]
 name = "lib"
 path = "src/lib.rs"
@@ -17,10 +14,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "bin"
 path = "src/main.rs"
-
-[[bench]]
-name = "bench"
-harness = false
 
 [profile.release]
 opt-level = 2
